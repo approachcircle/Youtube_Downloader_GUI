@@ -1,6 +1,10 @@
-from tkinter import *
-from pytube import YouTube
-
+try:
+    from tkinter import *
+    from pytube import YouTube
+except ModuleNotFoundError:
+    print("please install pytube using 'pip install pytube' in cmd or terminal before running this script.")
+    input()
+    quit()
 try:
 
     def AudioDownload():
